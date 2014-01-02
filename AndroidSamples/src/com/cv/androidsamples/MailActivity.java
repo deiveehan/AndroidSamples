@@ -31,13 +31,15 @@ public class MailActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				String emailTo = tvEmailTo.getText().toString();
+				String emailAddresses[] = {emailTo};
 				String subject = tvSubject.getText().toString();
 				String mailContent = etMailContent.getText().toString();
 				
 				Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
-				emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, emailTo);
+				emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, emailAddresses);
 				emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
 				emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, mailContent);
+				emailIntent.setType("plain/text");
 				startActivity(emailIntent);
 			}
 		});

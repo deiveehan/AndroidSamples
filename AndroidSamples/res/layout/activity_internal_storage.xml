@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etIsInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter values">
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:weightSum="100"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+        <Button
+            android:id="@+id/bIsSave"
+            android:layout_weight="50"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/bIsLoad"
+            android:layout_weight="50"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Load" />
+        
+        
+    </LinearLayout>
+    <TextView android:text="None" android:id="@+id/tvIsResults" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    
+
+</LinearLayout>

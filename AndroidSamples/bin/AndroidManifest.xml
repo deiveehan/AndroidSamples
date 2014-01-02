@@ -8,6 +8,9 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="16" />
 
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -43,6 +46,74 @@
         <activity
             android:name="com.cv.androidsamples.MailActivity"
             android:label="@string/title_activity_mail" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.LifeCycle"
+            android:label="@string/title_activity_life_cycle" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.CalcActivity"
+            android:label="@string/title_activity_calc" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.Photo"
+            android:label="@string/title_activity_photo" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.CalcAnswersActivity"
+            android:label="@string/title_activity_calc_answers" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.ContactUsActivity"
+            android:label="@string/title_activity_contact_us" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.Prefs"
+            android:label="@string/title_activity_prefs" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.PrefsAccessActivity"
+            android:label="@string/title_activity_prefs_access" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.SlidingDrawerActivity"
+            android:label="@string/title_activity_sliding_drawer" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.WebViewActivity"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.SharedPreferencesActivity"
+            android:label="@string/title_activity_shared_preferences" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.InternalStorageActivity"
+            android:label="@string/title_activity_internal_storage" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.WVUActivity"
+            android:label="@string/title_activity_wvu" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.WVUPageActivity"
+            android:label="@string/title_activity_wvupage" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.ScrollViewActivity"
+            android:label="@string/title_activity_scroll_view" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.HorizontalScrView"
+            android:label="@string/title_activity_horizontal_scr_view" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.AbsoluteActivity"
+            android:label="@string/title_activity_absolute" >
+        </activity>
+        <activity
+            android:name="com.cv.androidsamples.UICompActivity"
+            android:label="@string/title_activity_uicomp" >
         </activity>
     </application>
 
